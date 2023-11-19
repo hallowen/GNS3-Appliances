@@ -1,0 +1,60 @@
+{
+    "appliance_id": "88cd0e5c-7b48-45e9-8f9d-9fef03c20f01",
+    "name": "vJunos-switch",
+    "category": "multilayer_switch",
+    "description": "Virtual switch with single VM for control and data planes ",
+    "vendor_name": "Juniper",
+    "vendor_url": "https://www.juniper.net/us/en/",
+    "documentation_url": "http://www.juniper.net/techpubs/",
+    "product_name": "Juniper vJunos-switch",
+    "product_url": "https://www.juniper.net/documentation/product/us/en/vjunos-switch/",
+    "registry_version": 4,
+    "status": "experimental",
+    "maintainer": "Sandeep Suresh",
+    "maintainer_email": "sandeepsuresh2006@gmail.com",
+    "usage": "Initial username is root, no password.\n\nUSAGE INSTRUCTIONS\n\nIf fxp0 is not connected to a network with a DHCP server, the boot is delayed by 1 minute.",
+    "symbol": "juniper-vqfx.svg",
+    "first_port_name": "fxp0",
+    "port_name_format": "ge-0/0/{port0}",
+    "qemu": {
+        "adapter_type": "virtio-net-pci",
+        "adapters": 11,
+        "ram": 5120,
+        "cpus": 4,
+        "hda_disk_interface": "virtio",
+        "arch": "x86_64",
+        "console_type": "telnet",
+        "kvm": "require",
+        "options": "-serial mon:stdio -nographic -smbios type=1,product=VM-VEX -cpu host"
+    },
+    "images": [
+        {
+            "filename": "vjunos-switch-23.1R1.8.qcow2",
+            "version": "23.1R1.8",
+            "md5sum": "21ab960610e852c82e51460e13e55cca",
+            "filesize": 3960668160,
+            "download_url": "https://support.juniper.net/support/downloads/?p=vjunos"
+        },
+        {
+            "filename": "vJunos-switch-23.2R1.14.qcow2",
+            "version": "23.2R1.14",
+            "md5sum": "256039b658a8ddce0b955d4cb8fb3048",
+            "filesize": 3966631936,
+            "download_url": "https://support.juniper.net/support/downloads/?p=vjunos"
+        }
+    ],
+    "versions": [
+        {
+            "name": "23.1R1.8",
+            "images": {
+                "hda_disk_image": "vjunos-switch-23.1R1.8.qcow2"
+            }
+        },
+        {
+            "name": "23.2R1.14",
+            "images": {
+                "hda_disk_image": "vJunos-switch-23.2R1.14.qcow2"
+            }
+        }
+    ]
+}

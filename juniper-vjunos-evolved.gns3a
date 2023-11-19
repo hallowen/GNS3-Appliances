@@ -1,0 +1,130 @@
+{
+    "appliance_id": "759d5f45-fa08-48e6-a1ba-cc228838dc5c",
+    "name": "vJunosEvo",
+    "category": "router",
+    "description": "Juniper Evolved Router ",
+    "vendor_name": "Juniper",
+    "vendor_url": "https://www.juniper.net/us/en/",
+    "documentation_url": "http://www.juniper.net/techpubs/",
+    "product_name": "Juniper vJunosEvolved",
+    "product_url": "https://www.juniper.net/documentation/product/us/en/vjunosevolved/",
+    "registry_version": 6,
+    "status": "experimental",
+    "maintainer": "Sandeep Suresh",
+    "maintainer_email": "sandeepsuresh2006@gmail.com",
+    "usage": "Initial username is root, no password.\n\nUSAGE INSTRUCTIONS\n\nThe PFE_1 and PFE_4 interfaces need to be interconnected in one VLAN.\nThe RPIO_2 and RPIO_3 interfaces need to be interconnected in another VLAN.",
+    "symbol": "juniper-vmx.svg",
+    "first_port_name": "re0:mgmt-0",
+    "port_name_format": "et-0/0/{port0}",
+    "qemu": {
+        "adapter_type": "virtio-net-pci",
+        "adapters": 17,
+        "custom_adapters": [
+            {
+                "adapter_number": 0,
+                "port_name": "re0:mgmt-0"
+            },
+            {
+                "adapter_number": 1,
+                "port_name": "PFE_1"
+            },
+            {
+                "adapter_number": 2,
+                "port_name": "RPIO_2"
+            },
+            {
+                "adapter_number": 3,
+                "port_name": "RPIO_3"
+            },
+            {
+                "adapter_number": 4,
+                "port_name": "PFE_4"
+            },
+            {
+                "adapter_number": 5,
+                "port_name": "et-0/0/0"
+            },
+            {
+                "adapter_number": 6,
+                "port_name": "et-0/0/1"
+            },
+            {
+                "adapter_number": 7,
+                "port_name": "et-0/0/2"
+            },
+            {
+                "adapter_number": 8,
+                "port_name": "et-0/0/3"
+            },
+            {
+                "adapter_number": 9,
+                "port_name": "et-0/0/4"
+            },
+            {
+                "adapter_number": 10,
+                "port_name": "et-0/0/5"
+            },
+            {
+                "adapter_number": 11,
+                "port_name": "et-0/0/6"
+            },
+            {
+                "adapter_number": 12,
+                "port_name": "et-0/0/7"
+            },
+            {
+                "adapter_number": 13,
+                "port_name": "et-0/0/8"
+            },
+            {
+                "adapter_number": 14,
+                "port_name": "et-0/0/9"
+            },
+            {
+                "adapter_number": 15,
+                "port_name": "et-0/0/10"
+            },
+            {
+                "adapter_number": 16,
+                "port_name": "et-0/0/11"
+            }
+        ],
+        "ram": 5120,
+        "cpus": 4,
+        "hda_disk_interface": "virtio",
+        "arch": "x86_64",
+        "console_type": "telnet",
+        "kvm": "require",
+        "options": "-serial mon:stdio -smbios type=0,vendor=Bochs,version=Bochs -smbios type=3,manufacturer=Bochs -smbios type=1,product=Bochs,manufacturer=Bochs,serial=chassis_no=0:slot=0:type=1:assembly_id=0x0D20:platform=251:master=0:channelized=no -cpu IvyBridge,ibpb=on,md-clear=on,spec-ctrl=on,ssbd=on"
+    },
+    "images": [
+        {
+            "filename": "vJunosEvolved-23.1R1.8.qcow2",
+            "version": "23.1R1.8",
+            "md5sum": "4ba05e60b9be4adf3e31ed2eec723d23",
+            "filesize": 1910374400,
+            "download_url": "https://support.juniper.net/support/downloads/?p=vjunos-evolved"
+        },
+        {
+            "filename": "vJunosEvolved-23.2R1.15.qcow2",
+            "version": "23.2R1.15",
+            "md5sum": "802f4ac9a670e6113676ebb470f4531e",
+            "filesize": 1741946880,
+            "download_url": "https://support.juniper.net/support/downloads/?p=vjunos-evolved"
+        }
+    ],
+    "versions": [
+        {
+            "name": "23.1R1.8",
+            "images": {
+                "hda_disk_image": "vJunosEvolved-23.1R1.8.qcow2"
+            }
+        },
+        {
+            "name": "23.2R1.15",
+            "images":{
+                "hda_disk_image": "vJunosEvolved-23.2R1.15.qcow2"
+            } 
+        }
+    ]
+}
