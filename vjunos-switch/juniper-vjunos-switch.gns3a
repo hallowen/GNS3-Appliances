@@ -41,6 +41,13 @@
             "md5sum": "256039b658a8ddce0b955d4cb8fb3048",
             "filesize": 3966631936,
             "download_url": "https://support.juniper.net/support/downloads/?p=vjunos"
+        },
+        {
+            "filename": "vJunos-switch-24.4R1.9.qcow22",
+            "version": "24.4R1.9",
+            "md5sum": "253c38c4af2ad220a3d8308dafdcc661e",
+            "filesize": 4035444736,
+            "download_url": "https://support.juniper.net/support/downloads/?p=vjunos"
         }
     ],
     "versions": [
@@ -54,6 +61,12 @@
             "name": "23.2R1.14",
             "images": {
                 "hda_disk_image": "vJunos-switch-23.2R1.14.qcow2"
+            }
+        },
+        {
+            "name": "24.4R1.9",
+            "images": {
+                "hda_disk_image": "vJunos-switch-24.4R1.9.qcow2"
             }
         }
     ]
