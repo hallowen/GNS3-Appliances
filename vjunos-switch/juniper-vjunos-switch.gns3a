@@ -43,9 +43,9 @@
             "download_url": "https://support.juniper.net/support/downloads/?p=vjunos"
         },
         {
-            "filename": "vJunos-switch-24.4R1.9.qcow22",
+            "filename": "vJunos-switch-24.4R1.9.qcow2",
             "version": "24.4R1.9",
-            "md5sum": "253c38c4af2ad220a3d8308dafdcc661e",
+            "md5sum": "53c38c4af2ad220a3d8308dafdcc661e",
             "filesize": 4035444736,
             "download_url": "https://support.juniper.net/support/downloads/?p=vjunos"
         }
