@@ -1,0 +1,43 @@
+{
+    "appliance_id": "63303b67-959e-4f1b-94c6-b8bad06a68d7",
+    "name": "Juniper Apstra",
+    "category": "guest",
+    "description": "Juniper Apstra is an intent-based networking solution that simplifies and automates data center network design, deployment, and operations. It provides a single source of truth, enabling network engineers to define their desired outcomes and letting Apstra handle the underlying configurations, validation, and continuous assurance. With built-in analytics, multi-vendor support, and closed-loop automation, Apstra helps optimize network performance, reduce operational complexity, and enhance reliability across data center environments.",
+    "vendor_name": "Juniper Networks",
+    "vendor_url": "https://www.juniper.net/us/en/",
+    "product_name": "Juniper Apstra",
+    "registry_version": 1,
+    "status": "stable",
+    "maintainer": "Sandeep Suresh",
+    "maintainer_email": "sandeepsuresh2006@gmail.com",
+    "first_port_name": "eth0",
+    "port_name_format": "eth{0}",
+    "qemu": {
+        "adapter_type": "virtio-net-pci",
+        "adapters": 1,
+        "ram": 8192,
+        "cpus": 8,
+        "hda_disk_interface": "virtio",
+        "arch": "x86_64",
+        "console_type": "telnet",
+        "kvm": "require",
+        "options": "-machine type=pc,accel=kvm -vga std -usbdevice tablet -boot order=cd",
+    },
+    "images": [
+        {
+            "filename": "aos-server.qcow2",
+            "version": "V1",
+            "md5sum": "4321f55a6cecfd4dab7bccf6de663b0c",
+            "filesize": 5214306304,
+            "download_url": "https://support.juniper.net/support/downloads/?p=apstra"
+        }
+    ],
+    "versions": [
+                {
+            "name": "5.1.0.117",
+            "images": {
+                "hda_disk_image": "aos-server.qcow2"
+            }
+        },
+    ]
+}
