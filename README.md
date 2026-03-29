@@ -19,6 +19,7 @@
 ### Versions Currently Supported
 
 * 23.2R1.15
+* 24.2R1-S2
 
 ***Notes***
 
